@@ -7,7 +7,6 @@ using UnityEngine;
 public class CombatenteScriptbl : ScriptableObject
 {
     public int VidaMax;
-    public int VidaAtual;
 
     public int DanoFraco;
     public int DanoForte;
