@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] int vidaMax;
-    [SerializeField] int vidaAtual;
-
-    [SerializeField] int danoFraco;
-    [SerializeField] int danoForte;
-
+    [SerializeField] CombatenteScriptbl _playerScriptable;
 
     void Start()
     {
