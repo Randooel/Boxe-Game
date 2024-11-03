@@ -18,4 +18,9 @@ public class Inimigo : Lutador
     {
         throw new System.NotImplementedException();
     }
+
+    public override void AtaqueForte()
+    {
+        throw new System.NotImplementedException();
+    }
 }

@@ -16,6 +16,7 @@ public class Player : Lutador
     void Update()
     {
         AtaqueFraco();
+        AtaqueForte();
     }
 
     public override void AtaqueFraco()
@@ -25,6 +26,16 @@ public class Player : Lutador
             punho.DanoFraco();
             animator.SetTrigger("isWeakPunching");
             Debug.Log("Atacou fofo");
+        }
+    }
+
+    public override void AtaqueForte()
+    {
+        if(Input.GetMouseButtonDown(1))
+        {
+            punho.DanoForte();
+            animator.SetTrigger("isStrongPunching");
+            Debug.Log("Atacou FORTE");
         }
     }
 }

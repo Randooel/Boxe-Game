@@ -14,13 +14,17 @@ public abstract class Lutador : MonoBehaviour
 
     public abstract void AtaqueFraco();
 
+    public abstract void AtaqueForte();
+
     public void TomarDano(int danoRecebido)
     {
         _vidaAtual -= danoRecebido;
+        Debug.Log(_vidaAtual);
     }
 
     public void RetomarVida()
     {
         _vidaAtual = _fighterScriptable.VidaMax;
+        Debug.Log(_vidaAtual);
     }
 }
