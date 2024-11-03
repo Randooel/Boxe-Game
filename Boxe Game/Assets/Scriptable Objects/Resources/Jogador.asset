@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Jogador
   m_EditorClassIdentifier: 
   VidaMax: 20
-  VidaAtual: 20
   DanoFraco: 5
-  DanoForte: 10
+  DanoForte: 15

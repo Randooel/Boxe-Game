@@ -16,6 +16,10 @@ public abstract class Lutador : MonoBehaviour
 
     public abstract void AtaqueForte();
 
+    public abstract void DesvioEsquerda();
+
+    public abstract void DesvioDireita();
+
     public void TomarDano(int danoRecebido)
     {
         _vidaAtual -= danoRecebido;

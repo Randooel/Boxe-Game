@@ -23,4 +23,14 @@ public class Inimigo : Lutador
     {
         throw new System.NotImplementedException();
     }
+
+    public override void DesvioEsquerda()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void DesvioDireita()
+    { 
+        throw new System.NotImplementedException();
+    }
 }

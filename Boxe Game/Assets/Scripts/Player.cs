@@ -17,6 +17,8 @@ public class Player : Lutador
     {
         AtaqueFraco();
         AtaqueForte();
+        DesvioDireita();
+        DesvioEsquerda();
     }
 
     public override void AtaqueFraco()
@@ -36,6 +38,24 @@ public class Player : Lutador
             punho.DanoForte();
             animator.SetTrigger("isStrongPunching");
             Debug.Log("Atacou FORTE");
+        }
+    }
+
+    public override void DesvioEsquerda()
+    {
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            animator.SetTrigger("isLeftDodging");
+            Debug.Log("Desviou esquerda");
+        }
+    }
+
+    public override void DesvioDireita()
+    {
+        if(Input.GetKeyDown(KeyCode.D))
+        {
+            animator.SetTrigger("isRightDodging");
+            Debug.Log("Desviou direita");
         }
     }
 }
