@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Inimigo : Lutador
 {
+    Animator animator;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
         RetomarVida();
     }
 
@@ -16,7 +19,9 @@ public class Inimigo : Lutador
 
     public override void AtaqueFraco()
     {
-        throw new System.NotImplementedException();
+        punho.DanoFraco();
+        animator.SetTrigger("isWeakPunching");
+        Debug.Log("Atacou fofo");
     }
 
     public override void AtaqueForte()
